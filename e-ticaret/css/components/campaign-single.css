@@ -1,0 +1,46 @@
+.campaign-single {
+    background-image:url(../../img/campaign/resim1.jpeg);
+    background-attachment: fixed;
+    padding: 140px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .campaign-single .campaign-wrapper {
+    color: rgb(249, 240, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .campaign-single .campaign-wrapper h2 {
+    font-size: 25px;
+  }
+  
+  .campaign-single .campaign-wrapper strong {
+    font-size: 55px;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  
+  .campaign-single .campaign-wrapper span {
+    display: inline-block;
+    width: 50px;
+    height: 5px;
+    background-color: rgb(246, 232, 242);
+    
+  }
+  
+  .campaign-single .campaign-wrapper > a {
+    background-color: #f2ccec;
+    color:#ffffff;
+    margin-top: 60px;
+  }
+  
+  .campaign-single .campaign-wrapper > a:hover {
+    background-color: #f191da;
+    border-color: #f84ae1;
+    color: #0d0d0d;
+  }

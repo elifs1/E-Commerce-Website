@@ -1,0 +1,115 @@
+.slider{
+  position:relative;
+}
+
+
+.slider-item{
+  position: relative;
+  height: calc(100vh - 140.4px);
+  display: flex;
+  align-items:center;
+}
+
+.slider-item .slider-image img{
+  position: absolute;
+  top: 0;
+  left: 170px;
+  height: 100%;
+  width: 80%; ;
+  object-fit: cover;
+  object-position: 60%;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.slider .slider-buttons{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+
+}
+.slider-buttons button {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 1px solid #dee0ea;
+  background-color: white;
+  opacity: 0.5;
+  transition: 0.2s ease all;
+}
+
+.slider-buttons button:hover {
+  background-color: #f2b4ec;
+  opacity: 1;
+  border-color:#f784eb
+}
+
+
+.slider-buttons button i{
+  font-size: 30px;
+  color:rgb(114, 21, 111)
+  
+}
+
+.slider .slider-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6px;
+  
+}
+
+.slider .slider-dots .slider-dot {
+  border: none;
+  display: flex;
+  opacity: 0.4;
+  border-radius: 100%;
+  transition: 0.2s ease opacity;
+}
+
+.slider .slider-dots .slider-dot:hover {
+  opacity: 1;
+}
+
+.slider .slider-dots .slider-dot span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #e013ef;
+  border-radius: 100%;
+}
+
+/* Responsive Stil Düzenlemeleri */
+@media (max-width: 768px) {
+  .slider-item {
+    height: calc(100vh - 141px);
+  }
+
+  .slider-image {
+    width: 100%; /* Görsel kapsayıcısının genişliğini %100 yaparak ortalamayı sağlarız */
+  }
+
+  .slider-image img {
+    width: 90%; /* Görsel genişliğini %90 yaparak kenar boşlukları ekliyoruz */
+    margin: 0 auto; /* Görseli ortalamak için */
+  }
+
+  .slider-buttons {
+    display: none !important; /* Butonları küçük ekranlarda gizliyoruz */
+  }
+
+  .slider-dots {
+    bottom: 10px; /* Noktaların konumunu biraz yukarı alıyoruz */
+  }
+} 

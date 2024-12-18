@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <!--! Boostrap Icons CDN  -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+ </head>
+ <body>
+     <!--! header start  -->
+   <header>
+    <div class="global-notification">
+        <p>
+            İLK SİPARİŞİNİZDE ÜCRETSİZ KARGO FIRSATI!
+            <a href="shop.html" >ALIŞVERİŞE BAŞLA</a>
+        </p>
+    </div>
+    <div class="header-row">
+        <div class="container">
+            <div class="header-wrapper">
+              <div class="header-mobile">
+                <i class="bi bi-list" id="btn-menu"></i>
+              </div>
+                <div class="header-left">
+                  <a href="index.html" class="logo">Mom's Crochet</a>
+                </div>
+                <div class="header-center" id="sidebar">
+                  <nav class="navigation">
+                    <ul class="menu-list">
+                      <li class="menu-list-item">
+                        <a href="index.html" class="menu-link ">
+                          Ana sayfa
+                        </a>
+                       
+                      </li>
+                      <li class="menu-list-item">
+                        <a href="shop.html" class="menu-link">
+                          ALIŞVERİŞ
+                          <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="menu-dropdown-wrapper">
+                          <ul class="menu-dropdown-content">
+                              <li>
+                                  <a href="#">Yeni Gelenler</a>
+                              </li>
+                              <li>
+                                  <a href="#">Anahtarlıklar</a>
+                              </li>
+                              <li>
+                                  <a href="#">Çantalar</a>
+                              </li>
+                              <li>
+                                  <a href="#">Kıyafetler</a>
+                              </li>
+                              <li>
+                                  <a href="#">Oyuncak Bebekler,Hayvanlar</a>
+                              </li>
+                              <li>
+                                  <a href="#">Atkılar</a>
+                              </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="menu-list-item">
+                        <a href="blog.html" class="menu-link">
+                          Blog
+                          
+                        </a>
+                      </li>
+                      <li class="menu-list-item">
+                        <a href="contact.html" class="menu-link">
+                          İLETİŞİM
+                         
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <i class="bi-x-circle" id="close-sidebar"></i>
+                </div>
+                <div class="header-right">
+                  <div class="header-right-links">
+                      <a href="account.html" class="header-account">
+                        <i class="bi bi-person"></i>
+                      </a>
+                      <button class="search-button">
+                        <i class="bi bi-search-heart"></i>
+                      </button>
+                      <a href="#">
+                        <i class="bi bi-balloon-heart"></i>
+                      </a>
+                    <div class="header-cart">
+                      <a href="cart.html" class="header-cart-link">
+                        <i class="bi bi-bag-heart"></i>
+                        <span class="header-cart-count">0</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </header>
+
+   <!-- ! header end  -->
+   <!--! modal search start  -->
+    <div class="modal-search">
+      <div class="modal-wrapper">
+        <h3 class="modal-title">Ürün Arama</h3>
+        <p class="modal-text">Aradığınız ürünü yazmaya başlayın.</p>
+        <form class="search-form">
+          <input type="text" placeholder="Ürün Ara">
+          <button>
+            <i class="bi bi-search-heart"></i>
+          </button>
+        </form>
+        <div class="search-results">
+          <div class="search-heading">
+            <h3>ÜRÜN SONUCU</h3>
+          </div>
+          <div class="results">
+            <a href="#" class="result-item">
+              <img src="img/products/resim1.jpeg" class="img-fluid" alt="">
+              <div class="search-info">
+                <h4>Kaplumbağa peluş örgü</h4>
+                <span class="search-sku">SKU: PD0016</span>
+                <span class="search-price">250.00₺</span>
+              </div>
+            </a>
+            <a href="#" class="result-item">
+              <img src="img/products/resim2.jpeg" class="search-thumb" alt="">
+              <div class="search-info">
+                <h4>Denizanası anahtarlık</h4>
+                <span class="search-sku">SKU: PD0017</span>
+                <span class="search-price">60.00₺</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <i class="bi bi-x-circle" id="close-search"></i>
+      </div>
+    </div>
+  <!--! modal search end  -->
+<!--! modal dialog start  -->
+<div class="modal-dialog">
+  <div class="modal-content">
+    <button class="modal-close">
+      <i class="bi bi-x"></i>
+    </button>
+    <div class="modal-image">
+      <img src="img/modal-dialog.jpeg" alt="">
+    </div>
+    <div class="popup-wrapper">
+      <div class="popup-content">
+        <div class="popup-title">
+          <h3>HABER BÜLTENİ</h3>
+        </div>
+        <p class="popup-text">
+          Bültenimize kaydolun ve özel fırsatları doğrudan gelen kutunuza alın!
+        </p>
+        <form class="popup-form">
+          <input type="text" placeholder="E-mail adresinizi giriniz">
+          <button class="btn btn-primary">KAYDOL</button>
+          <label>
+            <input type="checkbox">
+            <span>Tekrar Gösterme</span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--! modal dialog end  -->
+
+   <!--! account start  -->
+   <section class="account-page">
+    <div class="container">
+        <div class="account-wrapper">
+            <div class="account-column">
+                <h2>Hesabınıza Giriş Yapın </h2>
+                <form>
+                    <div>
+                        <label>
+                            <span> Kullanıcı Adı Veya E-posta Adresi<span class="required">*</span></span>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span>Şifre <span class="required">*</span></span>
+                            <input type="password">
+                        </label>
+                    </div>
+                    <p class="remember">
+                        <label>
+                            <input type="checkbox">
+                            <span>Beni hatırla</span>
+                        </label>
+                        <button class="btn btn-sm">Giriş Yap</button>
+                    </p>
+                    <a href="#" class="form-link">Şifrenizi mi unuttunuz?</a>
+                </form>
+            </div>
+            <div class="account-column">
+                <h2>Kaydol</h2>
+                <form>
+                    <div>
+                        <label>
+                            <span>Kullanıcı Adı <span class="required">*</span></span>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span>E-posta Adresi <span class="required">*</span></span>
+                            <input type="email">
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <span>Şifre <span class="required">*</span></span>
+                            <input type="password">
+                        </label>
+                    </div>
+                    <button class="btn btn-sm">Kaydolun</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--! account end  -->
+
+  
+   <!--! policy start  -->
+  <section class="policy">
+    <div class="container">
+      <ul class="policy-list">
+        <li class="policy-item">
+          <i class="bi bi-truck"></i>
+          <div class="policy-texts">
+            <strong>ÜCRETSİZ TESLİMAT</strong>
+            <span>500₺ VE ÜZERİ</span>
+          </div>
+        </li>
+        <li class="policy-item">
+          <i class="bi bi-headset"></i>
+          <div class="policy-texts">
+            <strong>7/24 DESTEK</strong>
+            <span>24 SAAT ONLİNE</span>
+          </div>
+        </li>
+        <li class="policy-item">
+          <i class="bi bi-arrow-clockwise"></i>
+          <div class="policy-texts">
+            <strong> 30 GÜNLÜK İADE</strong>
+            <span>30 GÜN İÇİNDE İADE</span>
+          </div>
+        </li>
+        <li class="policy-item">
+          <i class="bi bi-credit-card"></i>
+          <div class="policy-texts">
+            <strong>ÖDEME YÖNTEMİ</strong>
+            <span>GÜVENLİ ÖDEME</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--! policy end  -->
+    <!--! footer start  -->
+    <footer class="footer">
+      <div class="subscribe-row">
+        <div class="container">
+          <div class="footer-row-wrapper">
+            <div class="footer-subscribe-wrapper">
+              <div class="footer-subscribe">
+                <div class="footer-subscribe-top">
+                  <h3 class="subscribe-title">Yeni ürünler, indirimler ve daha fazlası hakkında bilgi almak için e-postalarımızı alın.</h3>
+                  <p class="subscribe-desc">Size e-postayla 500₺ üzerindeki ilk siparişinizde 100₺ değerinde bir kupon göndereceğiz.</p>
+                </div>
+                <div class="footer-subscribe-bottom">
+                  <form>
+                    <input type="text" placeholder="Mailinizi giriniz">
+                    <button class="btn">Abone Ol</button>
+                  </form>
+                  <p class="privacy-text">
+                    Abone olarak <a href="#"> Şartlar ve Koşullarımızı ve Gizlilik ve Çerez Politikamızı kabul etmiş olursunuz.</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-contact-wrapper">
+              <div class="footer-contact-top">
+                <h3 class="contact-title">
+                  Yardıma mı ihtiyacınız var? <br>
+                  (+90) 123 456 78 90
+                </h3>
+                <p class="contact-desc"> 8:00 – 21:00 Arası Bize Ulaşabilirsiniz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="widgets-row">
+        <div class="container">
+          <div class="footer-widgets">
+            <div class="brand-info">
+              <div class="footer-logo">
+                <a href="#" class="logo">Mom's Crochet</a>
+              </div>
+              <div class="footer-contact">
+                <p>
+                  <a href="tel:555 555 55 55">(+888) 123 45678 90</a> – <a
+                    href="mailto:info@example.com">Momscrochet@gmail.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Bilgi</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Hakkımızda</a>
+                </li>
+                <li>
+                  <a href="#">Gizlilik Politikası</a>
+                </li>
+                <li>
+                  <a href="#">İade Politikası</a>
+                </li>
+                <li>
+                  <a href="#">Nakliye Politikası</a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Hesap</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Siparişlerim</a>
+                </li>
+                <li>
+                  <a href="#">İstek Listem</a>
+                </li>
+                <li>
+                  <a href="#">Hesap Detayları</a>
+                </li>
+                <li>
+                  <a href="#">Siparişlerimi Takip Et</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Alışveriş</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Ortaklık</a>
+                </li>
+                <li>
+                  <a href="#">Çok Satanlar</a>
+                </li>
+                <li>
+                  <a href="#">İndirim</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-nav-menu">
+              <h4>Kategoriler</h4>
+              <ul class="menu-list">
+                <li>
+                  <a href="#">Yeni Gelenler</a>
+                </li>
+                <li>
+                  <a href="#">Anahtarlıklar</a>
+                </li>
+                <li>
+                  <a href="#">Çantalar</a>
+                </li>
+                <li>
+                  <a href="#">Oyuncak Bebekler,Hayvanlar</a>
+                </li>
+                <li>
+                  <a href="#">Atkılar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-row">
+        <div class="container">
+          <div class="footer-copyright">
+            <div class="site-copyright">
+              <p>
+                Copyright 2024 © E-Ticaret Teması. Bütün hakları saklıdır. 
+              </p>
+            </div>
+            <a href="#">
+              <img src="img/copyright/cards.png" alt="">
+            </a>
+            <div class="footer-menu">
+              <ul class="footer-menu-list">
+                <li class="list-item">
+                  <a href="#">Gizlilik Politikası</a>
+                </li>
+                <li class="list-item">
+                  <a href="#">Şartlar ve Koşullar</a>
+                </li>
+                <li class="list-item">
+                  <a href="#">İade Politikası</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--! footer end  -->
+     <!-- javascript  -->
+    <script src="js/main.js" type="module"></script>
+  
+
+  </div>
+</body>
+</html>
+
+
+
+
